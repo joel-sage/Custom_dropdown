@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CUSTOM DROPDOWN WITH js</title>
+</head>
+
+<body>
+
+    <section class="custom-select-section">
+        <div class="container">
+            <input style="display: flex;" type="hidden" class="value_box" onchange="changeDisp()">
+            <div class="display-value" id="value_board" onclick="toggleOptions(event)">
+                <span class="value-text" id="valueText">None</span>
+            </div>
+            <ul class="select-container" id="selectContainer" onblur="toggleOptions()">
+                <ll class="select-option">None</ll>
+                <ll class="select-option">Footballer</ll>
+                <ll class="select-option">Bus Manager</ll>
+                <ll class="select-option">Boos Baby</ll>
+                <ll class="select-option">Pilot</ll>
+                <ll class="select-option">Driver</ll>
+                <ll class="select-option">A Cook</ll>
+            </ul>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
